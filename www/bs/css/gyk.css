@@ -1,5 +1,6 @@
-.container_gyk {padding-right:20px;padding-left:20px;margin-right:auto;margin-left:auto}
-h1, h2 { font-size: 45px; padding-bottom: 35px;}
+.container_gyk { margin: 0 13%;}
+h1, h2 { font-size: 50px; padding-bottom: 25px; font-family: 'GmarketSansBold'}
+h1 b{ color: #40c2d2; }
 /* 드래그시 색깔 변화 */
 ::selection {
   background-color: #40c2d2;
@@ -143,7 +144,8 @@ nav.navbarPopup::before {
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
   letter-spacing: 10px;
-  color: #40c2d2
+  color: #40c2d2;
+  font-family: 'GmarketSansBold'
 }
 .intro-content .brand-name-subtext {
   animation-name: fadeInUp;
@@ -245,8 +247,8 @@ nav.navbarPopup::before {
   background: rgba(250,250,250,.5)
 }
 .about-content h3 {
-  font-family: 'Montserrat Alternates Black', sans-serif;
-  font-weight: 900;
+  font-family: 'GmarketSansBold';
+  font-weight: bold;
   font-style: italic;
   display: inline-block;
   font-size: 77px;
@@ -254,14 +256,21 @@ nav.navbarPopup::before {
   color: #222;
   background: linear-gradient(to top, #40c2d2 50%, transparent 50% );
   font-weight: bold;
-  padding: 4px 7px;
+  padding: 13px 7px;
   white-space: nowrap;
 }
-.aboutContents .aboutText > p {
-  font-size: 25px;
-  font-weight: bold;
+.aboutContents .aboutPs {
+  padding: 10px 0;
+}
+.aboutContents .aboutText p {
+  font-size: 20px;
   color: #222;
-  padding: 10px;
+  padding: 0;
+  line-height: 1.1;
+}
+.aboutContents .aboutText p b {
+  font-size: 22px;
+  background: linear-gradient(to top, #40c2d2 50%, transparent 50% );
 }
 .about-content img {
   width: 90%;
@@ -294,10 +303,9 @@ nav.navbarPopup::before {
 }
 
 /* youtube video 유튜브 비디오  */
-#youtubeSection {
-
-  padding: 0 90px;
-}
+#youtubeSection { padding: 0 90px; }
+.youtbTitle { padding: 100px 0 50px 0; }
+.youtbTitle p { font-size: 20px; }
 .youtubeSec {
   position: relative;
   width: 100%;
@@ -326,15 +334,54 @@ nav.navbarPopup::before {
 .media-left, .media > .pull-left { margin-top: 20px; }
 
 #process .media-body h3 {
-  font-size: 30px;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: 900;
+  font-size: 65px;
+  font-family: 'GmarketSansBold';
+  font-weight: bold;
   font-style: italic;
+  text-align: left;
+  margin: 25px 0 25px 0;
+}
+.media-body .accText {
+  position: absolute;
+  z-index: 10;
+  top: 70%;
+  right: 0;
+  text-align: right;
+  background: rgba(250,250,250,.7);
+  padding: 25px 25px 25px 40px;
+  color: #222;
+  font-size: 20px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+.media-body .accText p {
+  margin: 0;
+}
+.media-body .accText b {
+  color: #40c2d2;
+  font-size: 22px;
 }
 #process .media-body img,
 #process .media-body ul {
   display: inline-block; vertical-align: middle; text-align: right; font-size: 18px;
 }
+.media-body .accImg {
+  overflow: hidden;
+  width: 440px;
+  height: 640px;
+}
+.media-body .accImg img {
+  transform: scale(1);
+  transition: transform 0.7s;
+  width: 100%;
+}
+.media-body .accImg:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
 #process .media-body ul b {
   color: #40c2d2;
   padding: 3px;
@@ -361,6 +408,13 @@ nav.navbarPopup::before {
 }
 .pricing-mt p {
   z-index: 11;
+  font-size: 28px;
+}
+.pricing-mt p b {
+  font-family: 'GmarketSansBold';
+  color: #40c2d2;
+  border-radius: 5px;
+  padding: 5px;
 }
 .pricing-item .btn {
   padding: 4px 7px;
@@ -369,9 +423,6 @@ nav.navbarPopup::before {
   border:0;
 }
 
-.pEvent-contents p {
-  font-size: 1.4vw
-}
 .pEvent-contents strong {
   font-size: 2vw
 }
@@ -451,6 +502,7 @@ nav.navbarPopup::before {
 .prizesTitle li:last-child {
   color: #40c2d2;
   font-size: 50px;
+  font-family: 'GmarketSansBold'
 }
 .prizesContents .media,
 .prizesContents .media-body ul {
