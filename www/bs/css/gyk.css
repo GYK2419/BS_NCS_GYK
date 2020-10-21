@@ -1,0 +1,467 @@
+.container_gyk {padding-right:20px;padding-left:20px;margin-right:auto;margin-left:auto}
+h1, h2 { font-size: 45px; padding-bottom: 35px;}
+/* 드래그시 색깔 변화 */
+::selection {
+  background-color: #40c2d2;
+  color: white;
+}
+/* 스크롤 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #40c2d2;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #0d5c66
+}
+/* 퀵 quick*/
+#quick {
+  position: fixed; right: 1.7%; bottom: 10%; z-index: 10000000; text-align: center;
+}
+#quick .quickSNS {
+
+}
+#quick .quickSNS li {
+  display: block;
+  padding: 5px;
+}
+#quick .quickSNS li a {
+  display: block;
+}
+#quick .quickSNS li a i {
+  color: white;
+  background-color:#40c2d2;
+  border-radius: 70px;
+  padding: 7px;
+}
+
+#quick .quickSNS li:last-child {
+  padding: 10px 0;
+}
+.quickBtn > p,
+.quickBtn > a {
+  font-size: 15px;
+}
+p.quickToggle i,
+.quickBtn a i {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: ;
+  border: 3px solid #40c2d2;
+  padding: 7px;
+  margin-top: 10px;
+  margin-left: 40px;
+  color: #40c2d2;
+  font-weight: bold;
+}
+
+/* 로고 */
+#page-top .navbar-brand { padding: 20px; }
+
+/* 헤더메뉴 navi */
+/* nav.navbarPopup {
+  display: block;
+  z-index: 10000000000;
+  transform: translateX(0);
+  transition-property: transform;
+  transition-duration: .4s;
+  transition-timing-function: cubic-bezier(.645,.045,.355,1);
+}
+nav.navbarPopup::before {
+  border-width: 35px;
+  animation: navbarBorder 0.8s ease;
+}
+.navbar-collapse.collapse.in nav{
+  display: none;
+  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
+.navbar-collapse.collapse.in nav::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #40c2d2;
+  transition: border 0.8s ease 1s;
+}
+.navbar-toggle {
+  position: absolute;
+  right: 0;
+} */
+.navbar-toggle i{ color: #40c2d2; overflow: hidden; width: 65px; height: 65px; }
+.navbar-toggle .xi-bars {
+
+}
+.navbar-toggle .xi-close,
+.navbar-toggle .navbar-right { display: none; }
+.navbar-toggle.collapsed .xi-bars { display: none; }
+.navbar-toggle.collapsed { transition: 0.5s;}
+.navbar-toggle.collapsed .xi-close { display: block; }
+.navbar-collapse.collapse.in .navbar-right{ display: block }
+.navbar-collapse.collapse .navbar-right{ display: none; }
+.navbar-right {
+  position: absolute;
+  right: 47px;
+  text-align: right;
+  background-color: white;
+  padding: 15px;
+  font-size: 20px;
+  line-height: 20px;
+  z-index: 100000000;
+  border: 6px solid #40c2d2;
+}
+.navbar-right li a {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.navbar-expanded + header{ width:calc(100% - 100px); height:calc(100% - 100px); margin:50px}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border: 0;
+}
+/* 메인배너 */
+#page-top { overflow-x: hidden}
+
+.intro-content {
+  padding: 15px;
+  text-align: right;
+  left: 0;
+}
+.intro-content .brand-name {
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  letter-spacing: 10px;
+  color: #40c2d2
+}
+.intro-content .brand-name-subtext {
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  padding: 15px 0;
+  color: white
+}
+.intro-content p {
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards;
+  animation-duration: 2.5s;
+  margin: 0;
+  color: white;
+}
+.intro-content .brand-name-subtext b,
+.intro-content p b {
+  color: #fd7162
+}
+@keyframes fadeInUp {
+  0%{ transform: translateY(25px); opacity: 0; }
+  100%{ transform: translateY(0px); opacity: 1}
+}
+
+
+
+/* 메인 임시 */
+/* header .headerVertical {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  line-height: 38px;
+  letter-spacing: 20px;
+  font-weight: normal;
+  font-size: 22px;
+  color: #40c2d2;
+}
+.headerVertical .VerticalWhite,
+.headerVertical .VerticalBlue {
+  display: inline-block;
+} */
+
+/* 전체 좌우 버튼 */
+.about-carousel .owl-controls .owl-next { right: -70px; }
+.about-carousel .owl-controls .owl-prev { left: -70px; }
+.about-carousel .owl-controls .owl-next,
+.about-carousel .owl-controls .owl-prev { width: 40px; height: 40px; border-radius: 50%; }
+
+.portfolio-carousel .owl-controls .owl-prev,
+.portfolio-carousel .owl-controls .owl-next { width: 50px; height: 50px; border-radius: 50%; }
+.portfolio-carousel .owl-controls .owl-prev { left: 30px; }
+.portfolio-carousel .owl-controls .owl-next { right: 30px; }
+
+.testimonials .testimonials-carousel .owl-controls .owl-prev,
+.testimonials .testimonials-carousel .owl-controls .owl-next { width: 40px; height: 40px; border-radius: 50%; }
+
+/* 아티스트 사진 속 글자 */
+.about-carousel .item .caption { top: 70%; }
+
+/* 헤더 navbar */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #40c2d2;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #40c2d2;
+}
+/* @media min-width:768px 에서 header navi에 퀵버튼 sns 보이도록하기  */
+
+@media (max-width:768px) {
+  .pcView { display: none !important;}
+  .navbar-right { text-align: center; float: none !important; margin: 0;}
+  .navbar-inverse  .navbar-header .navbar-collapse {
+    border: 1px solid #40c2d2;
+  }
+  .aboutContents .aboutImg img {
+    width: 80%;
+  }
+}
+
+.navbar-default .navbar-nav > li > a { color: white; }
+.about-content {
+  width: 75%;
+  position: relative;
+  text-align: right;
+  margin: 0 auto;
+}
+.aboutContents .about-content:nth-child(3) .aboutText p {
+  white-space: pre;
+}
+.aboutContents .aboutText {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 40%;
+  background: rgba(250,250,250,.5)
+}
+.about-content h3 {
+  font-family: 'Montserrat Alternates Black', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  display: inline-block;
+  font-size: 77px;
+  line-height: 35px;
+  color: #222;
+  background: linear-gradient(to top, #40c2d2 50%, transparent 50% );
+  font-weight: bold;
+  padding: 4px 7px;
+  white-space: nowrap;
+}
+.aboutContents .aboutText > p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #222;
+  padding: 10px;
+}
+.about-content img {
+  width: 90%;
+}
+.aboutContents .aboutImg {
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+}
+/* @media (min-width:481px) {
+  .aboutContents .aboutImg {
+    width: 400px;
+    height: 266px;
+  }
+} */
+.aboutContents .aboutImg img{
+  transform: scale(1);
+  transition: transform 0.7s;
+  width: 100%;
+}
+.aboutContents .aboutImg:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#about aboutTitle {
+  position: relative;
+}
+
+/* youtube video 유튜브 비디오  */
+#youtubeSection {
+
+  padding: 0 90px;
+}
+.youtubeSec {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
+}
+.youtubeSec iframe {
+  position: absolute;
+  left: 50%; top:0;
+  transform: translateX(-50%);
+  width: 79%;
+  height: 80%;
+}
+
+/* product 제품 (포트폴리오) 부분 */
+.portfolio-carousel .item .project-details .project-description { line-height: 40px; }
+.portfolio-carousel .item .project-details .project-name { padding-bottom: 20px;}
+
+/* Accomplishments 업적 부분 */
+#process .services .media {
+  margin-bottom: 50px;
+}
+#process .process-part > div {
+  padding: 30px;
+}
+.media-left, .media > .pull-left { margin-top: 20px; }
+
+#process .media-body h3 {
+  font-size: 30px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+#process .media-body img,
+#process .media-body ul {
+  display: inline-block; vertical-align: middle; text-align: right; font-size: 18px;
+}
+#process .media-body ul b {
+  color: #40c2d2;
+  padding: 3px;
+}
+.process-part {
+  margin: 0 auto;
+}
+
+/* 이벤트 */
+#pricing.pricing {
+  position: relative;
+}
+#pricing::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11
+}
+.pricing-mt p {
+  z-index: 11;
+}
+.pricing-item .btn {
+  padding: 4px 7px;
+}
+.pricing-item a {
+  border:0;
+}
+
+.pEvent-contents p {
+  font-size: 1.4vw
+}
+.pEvent-contents strong {
+  font-size: 2vw
+}
+.pEvent-contents p,
+.pEvent-contents strong{
+  font-weight: bolder;
+  margin: 30px;
+}
+.pEvent-contents span {
+  display: inline-block;
+  color: #40c2d2;
+  background: #222;
+  border-radius: 50px;
+  border:0;
+  font-size: 22px;
+  padding: 5px 20px;
+  margin: 25px 10px;
+}
+.pEvent-contents span:last-child {
+  border: 0;
+}
+.pricing-item.featured-first .list-group {
+  text-align: left;
+}
+.pricing-item.featured-first .list-group .list-group-item {
+  white-space: pre;
+}
+.pricing-item.featured img {
+  width: 265px;
+}
+@media (min-width: 992px) {
+  .portfolio-carousel .col-md-push-7 {
+    left: 15%;
+  }
+}
+.pricing .pricing-item {
+  padding: 55px 40px;
+}
+.pricing .pricing-item.featured h3,
+.pricing-item.featured-first h3 {
+  margin-bottom: 30px;
+}
+.pricing-item.featured-first .list-group li {
+  border: 0;
+}
+
+/* 폼 작성 : 이벤트 추첨을 위해 작성해주세요 */
+.formTitle {}
+.formTitle > span {
+  color: gray;
+  font-size: 13px;
+  font-style: oblique;
+}
+#success button {
+  font-size: 15px;
+  border: 0;
+  padding: 15px;
+  color: #222;
+}
+#success button:hover{
+  color: #40c2d2;
+  background: transparent
+}
+
+/* #prizes 맨마지막 수상파트  */
+.media .media-body img {
+  width: 150px;
+}
+#prizes ul li { list-style: none; }
+.prizesTitle li {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bolder;
+  color: #222;
+  padding: 20px;
+}
+.prizesTitle li:last-child {
+  color: #40c2d2;
+  font-size: 50px;
+}
+.prizesContents .media,
+.prizesContents .media-body ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+.prizesContents .media-body ul li {
+  text-align: left;
+  font-size: 18px;
+}
+.prizesContents .media-body ul li b {
+  color: #40c2d2;
+  font-size: 20px;
+}
